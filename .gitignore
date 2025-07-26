@@ -1,0 +1,18 @@
+# Node modules
+**/node_modules/
+
+# Logs
+**/logs
+**/*.log
+
+# Build output
+**/.output/
+**/.nuxt/
+**/dist/
+**/build/
+
+# Environment files
+**/.env
+
+# Prisma
+**/prisma/dev.db
