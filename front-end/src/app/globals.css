@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide Next.js Dev Tools button with higher specificity */
+button[data-nextjs-dev-tools-button="true"] {
+  display: none !important;
+}
