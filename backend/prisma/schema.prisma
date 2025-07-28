@@ -8,10 +8,10 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  name      String
-  email     String   @unique
-  password  String
-  role      String   // "admin", "volunteer", "requester"
-  createdAt DateTime @default(now())
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  name     String?     // ← optional
+  role     String?     // ← optional or use default: @default("USER")
 }
+
